@@ -13,8 +13,8 @@ const App = () => {
   const [user, setUser] = useState(null);
   const [loggedInUser, setLoggedInUser] = useState(null);
   
-  const data = useContext(AuthContext); // Correctly getting context data
-  console.log(data?.userData?.employees); // Safe access to employees
+  const data = useContext(AuthContext);
+  
 
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem("loggedInUser"));
